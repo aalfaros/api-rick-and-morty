@@ -46,7 +46,9 @@ function CharacterList() {
           })}
           <NavPage
             page={page}
-            onClickNextPage={nextPage => setPage(nextPage)}
+            setPage={nextPage => setPage(nextPage)}
+            prevPage={prevPage}
+            nextPage={nextPage}
           />
         </div>
       )}
